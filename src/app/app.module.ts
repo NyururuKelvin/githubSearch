@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReposComponent } from './repos/repos.component';
 import { DateCountPipe } from './date-count.pipe';
+import { LatestReposDirective } from './latest-repos.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DateCountPipe } from './date-count.pipe';
     ProfileComponent,
     NavbarComponent,
     ReposComponent,
-    DateCountPipe
+    DateCountPipe,
+    LatestReposDirective
   ],
   imports: [
     BrowserModule,
