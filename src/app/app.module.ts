@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReposComponent } from './repos/repos.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     NavbarComponent,
-    ReposComponent
+    ReposComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
