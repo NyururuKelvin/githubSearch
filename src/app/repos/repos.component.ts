@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../profile-service/search.service';
 
 @Component({
   selector: 'app-repos',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repos.component.css']
 })
 export class ReposComponent implements OnInit {
+  reposItems: any[];
+  reposName: string='Githubsearch';
 
-  constructor() { }
+  constructor(private profileService:SearchService) {
 
-  ngOnInit(): void {
+   }
+
+   findRepo() {
+     this.profileService.UpdateRepo(this.reposName);
+     this.profileService.searchrepos().subscribe(repo => {
+
+      this.reposItems = repo['items'];
+      console.log(this.reposItems);
+     })
+   }
+
+  ngOnInit() {
+    this.findRepo()
   }
 
 }
