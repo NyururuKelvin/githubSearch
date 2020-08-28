@@ -15,7 +15,7 @@
 .profileimage{
     height: 250px;
     width: 250px;
-    border-radius: 50px;
+    border-radius: 250px;
     
 }
 .btn{
@@ -23,5 +23,9 @@
 
 }
 p{
-    font-size: small;
+    font-size: large;
+}
+
+.info{
+    background-color: rgb(24, 131, 124);
 }

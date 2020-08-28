@@ -13,12 +13,12 @@
 
     <div class="container" *ngIf='profile'>
         <!-- Entire card -->
-        <div class='card bg-light'>
+        <div class='card info'>
             <div class="card-header">
                 username: {{profile.login}}
             </div>
 
-            <div class="card-body">
+            <div class="card-body info">
                 <div class="row">
                     <div class="col-md-3">
                         <img [src]='profile.avatar_url' [title]='profile.name' class="img-responsive profileimage">
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="card bg-light" *ngIf="profile.public_repos">
+        <div class="card info" *ngIf="profile.public_repos">
         <div class="card-header">
             <h2>Repos</h2>
         </div>
