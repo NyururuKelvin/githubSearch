@@ -1,5 +1,13 @@
 .info{
     background-image: url('https://miro.medium.com/max/5120/1*l2nF8iuvoXq88G4Bqn0rew.jpeg');
     background-size: cover;
-    height: 100vh;
+    height: 85vh;
 }
+
+.footer{
+    text-align: center;
+    background-color: rgb(59, 80, 99);
+    color: white;
+    padding: 5px;
+    font-size: medium;
+  }
