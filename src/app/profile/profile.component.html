@@ -6,9 +6,17 @@
     <title>profile</title>
 </head>
 <body>
-    <form>
+    <form class='searchbox'>
         Enter the User Name: <input type="text" [(ngModel)]='username'
-        name='uesrname'(keyup)='findProfile()' class="Search" placeholder='Search or jump to ...'>
+        name='username'(keyup)='findProfile()' class="Search" placeholder='Search or jump to ...'>
     </form>
+
+    <div class="container" *ngIf='profile'>
+        <div class='card bg-light'>
+            <div class="card-header">
+                username: {{profile.login}}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
