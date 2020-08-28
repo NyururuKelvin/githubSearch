@@ -1,1 +1,14 @@
-<p>profile works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+<body>
+    <form>
+        Enter the User Name: <input type="text" [(ngModel)]='username'
+        name='uesrname'(keyup)='findProfile()' class="Search" placeholder='Search or jump to ...'>
+    </form>
+</body>
+</html>
