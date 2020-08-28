@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReposComponent } from './repos/repos.component';
+import { SearchService } from './profile-service/search.service'
+import { HttpClientModule } from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
 import { LatestReposDirective } from './latest-repos.directive';
 
@@ -22,9 +24,10 @@ import { LatestReposDirective } from './latest-repos.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
