@@ -31,7 +31,8 @@ export class ProfileComponent implements OnInit {
     })
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.findProfile()
   }
 
 }
