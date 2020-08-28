@@ -7,8 +7,8 @@
 </head>
 
     <form class='searchbox'>
-        Enter the User Name: <input type="text" [(ngModel)]='username'
-        name='username'(keyup)='findProfile()' class="Search" placeholder='Search or jump to ...'>
+        Enter the User Name: <input type="text" [(ngModel)]='userName'
+        name='userName'(keyup)='findProfile()' class="Search" placeholder='Search or jump to ...'>
     </form>
 
     <div class="container" *ngIf='profile'>

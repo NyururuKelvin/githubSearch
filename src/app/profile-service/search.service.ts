@@ -32,8 +32,8 @@ export class SearchService {
   updateProfile(userName:string){
     this.userName =userName
   }
-  UpdateRepo(repo:string) {
-    this.repoName = repo;
+  UpdateRepo(repoName:string) {
+    this.repoName = repoName;
   }
 
 }
