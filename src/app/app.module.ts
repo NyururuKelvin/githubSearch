@@ -10,6 +10,7 @@ import { ReposComponent } from './repos/repos.component';
 import { SearchService } from './profile-service/search.service'
 import { HttpClientModule } from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
+import { LatestDirective } from './latest.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DateCountPipe } from './date-count.pipe';
     NavbarComponent,
     ReposComponent,
     DateCountPipe,
+    LatestDirective,
   ],
   imports: [
     BrowserModule,
