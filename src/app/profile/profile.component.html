@@ -50,7 +50,7 @@
         </div>
         <div class="card-body " *ngFor="let repo of repos">
             <div class="card row">
-                <div class="card-body" appHighlight>
+                <div class="card-body" appLatestrepos>
                     <h3>{{repo.name}}</h3>
                     <p>Created: {{repo.created_at | dateCount}}</p>
                     <p>Language Used: {{repo.language}}</p>
